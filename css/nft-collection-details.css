@@ -1,0 +1,586 @@
+html,body{
+	background: linear-gradient(to right, #130b27 0%,#140527 100%);
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+}
+.highlight-purple{
+	font-weight: 600;
+	color: #8240db;
+}
+.highlight-blue{
+	font-weight: 600;
+	color: #404fdb;
+}
+.nft-collection-container{
+	position: relative;
+	margin-top: 3%;
+}
+.nft-collection-img{
+	width: 100%;
+	border-radius: 30px;
+	box-shadow: 0px 6px 20px rgba(121,34,240,0.12);
+}
+@media only screen and (max-width: 1199px){
+	.nft-collection-img{
+		width: 40%;
+		margin: 0 auto;
+	}
+}
+@media only screen and (max-width: 575px){
+	.nft-collection-img{
+		width: 50%;
+	}
+}
+.nft-collection-title{
+	font-family: 'Exo 2', sans-serif;
+	font-weight: 600;
+	font-size: 220%;
+	color: #ffffff;
+}
+@media only screen and (max-width: 1199px){
+	.nft-collection-title{
+		text-align: center;
+	}
+}
+.platform{
+	position: relative;
+}
+@media only screen and (max-width: 1199px){
+	.platform{
+  	align-items: center;
+  	justify-content: center;
+	}
+}
+.platform-logo{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+}
+.platform-name{
+	font-family: 'Exo 2', sans-serif;
+	font-weight: 300;
+	font-size: 100%;
+	color: rgba(255,255,255,0.4);
+	letter-spacing: 5px;
+	margin-left: 2%;
+}
+.nft-collection-description{
+	position: relative;
+	margin-top: 3%;
+	font-family: 'Exo 2', sans-serif;
+	font-weight: 200;
+	font-size: 100%;
+	color: rgba(255,255,255,0.7);	
+}
+@media only screen and (max-width: 575px){
+	.nft-collection-description{
+  	text-align: center;
+	}
+}
+.nft-stat-container{
+	background: #2f195e;
+	border-radius: 10px;
+	margin-bottom: 5%;
+	padding-left: 10%;
+	padding-top: 7%;
+	padding-bottom: 7%;
+}
+@media only screen and (max-width: 575px){
+	.nft-stat-container{
+		width: 80%;
+		margin: 0 auto;
+		padding: 0;
+		padding-top: 5%;
+		padding-bottom: 5%;
+		margin-bottom: 4%;
+	}
+}
+.nft-stat-title{
+	font-family: 'Exo 2', sans-serif;
+	font-weight: 200;
+	font-size: 80%;
+	color: rgba(255,255,255,0.7);
+}
+@media only screen and (max-width: 575px){
+	.nft-stat-title{
+		text-align: center;
+	}
+}
+.nft-stat-value{
+	font-family: 'Exo 2', sans-serif;
+	font-weight: 400;
+	font-size: 130%;
+	color: rgba(255,255,255,1);	
+}
+@media only screen and (max-width: 575px){
+	.nft-stat-value{
+		text-align: center;
+	}
+}
+.usd-value{
+	font-family: 'Exo 2', sans-serif;
+	font-weight: 300;
+	font-size: 90%;
+	color: rgba(255,255,255,0.4);		
+}
+.nft-change{
+	font-family: 'Exo 2', sans-serif;
+	font-weight: 400;
+	font-size: 85%;
+	color: #429132;
+}
+@media only screen and (max-width: 575px){
+	.usd-value, .nft-change{
+		text-align: center;
+	}
+}
+/* NFT Chart */
+.nft-chart-container{
+	position: relative;
+	margin-top: 2%;
+}
+.timeframe{
+	position: relative;
+	margin-top: 2%;
+	background: #381870;
+	border-radius: 10px !important;
+}
+.timeframe button{
+	font-family: 'Exo 2', sans-serif;
+	font-weight: 300;
+	font-size: 90%;
+	color: rgba(255,255,255,0.7) !important;
+	border-radius: 10px;
+}
+.timeframe button:hover{
+	background: #5725b0;
+}
+/*
+	NFT Market
+	Exchanges Table
+*/
+.coin-market-title{
+	position: relative;
+	margin-top: 5%;
+	font-family: "Exo 2", sans-serif;
+	font-weight: 400;
+	font-size: 160%;
+	color: #ffffff;
+}
+@media only screen and (max-width: 1199px){
+	.coin-market-title{
+  	text-align: center;
+	}
+}
+.description-text{
+	font-family: "Exo 2", sans-serif;
+	font-weight: 100;
+	font-size: 100%;
+	color: rgba(255,255,255,0.7);
+}
+@media only screen and (max-width: 1199px){
+	.description-text{
+  	text-align: center;
+	}
+}
+.pos-change{
+	font-weight: 400;
+	color: #429132;
+}
+.min-change{
+	font-weight: 400;
+	color: #E34962;
+}
+.crypto-img-table{
+	width: 20px;
+	margin-right: 2%;
+}
+.exchanges-table{
+	background: linear-gradient(to right, rgba(4,3,33,0) 0%,rgba(140,24,174,0) 0%,rgba(204,34,240,0.07) 100%) !important;
+}
+.exchanges-table thead{
+	background: #090213 !important;
+	border-bottom-width: 0px !important;
+}
+.exchanges-table thead tr{
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+.exchanges-table thead th{
+	font-family: "Exo 2", sans-serif;
+	font-weight: 400 !important;
+	font-size: 90% !important;
+	color: rgba(157, 59, 220, 0.7);
+	color: #563bdc;
+	color: #ffffff;
+	padding-top: 2% !important;
+	padding-bottom: 2% !important;
+}
+.exchanges-table tr{
+	border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+	background: none;
+	transition: background 0.3s ease-out, box-shadow 0.3s ease-out;
+}
+.exchanges-table tr:hover{
+	background: rgba(0, 0, 0, 0.25);
+	box-shadow: 0px 6px 20px rgba(121,34,240,0.3);
+}
+.exchanges-table td{
+	font-family: "Exo 2", sans-serif;
+	font-weight: 300;
+	color: #ffffff;
+	border-color: rgba(255, 255, 255, 0.1) !important;
+	padding-top: 1.7% !important;
+	padding-bottom: 1.7% !important;
+}
+.crypto-symbol-table{
+	font-weight: 300;
+	font-size: 80%;
+	color: rgba(255,255,255,0.4);
+}
+.green-status{
+	color: #429132;
+}
+.load-more-btn{
+	font-family: "Exo 2", sans-serif;
+	font-weight: 100;
+	font-size: 100%;
+	color: rgba(255,255,255,0.7);
+	border: 1px solid rgba(255,255,255,0.4);
+}
+/* Trending Coins */
+.trending-title{
+	margin-top: 2%;
+}
+@media only screen and (max-width: 1199px){
+	.trending-title{
+  	text-align: center;
+	}
+}
+@media only screen and (max-width: 1199px){
+	.trending-nft-wrapper{
+		width: 70%;
+	}
+}
+@media only screen and (max-width: 991px){
+	.trending-nft-wrapper{
+		width: 90%;
+	}
+}
+@media only screen and (max-width: 575px){
+	.trending-nft-wrapper{
+		width: 100%;
+	}
+}
+.trending-nft-container{
+  background: linear-gradient(to top, rgba(4,3,33,0) 0%,rgba(140,24,174,0) 30%,rgba(204,34,240,0.07) 100%);
+  background: rgba(47, 25, 94, 0.25);
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+  box-shadow: 0px 6px 20px rgba(121,34,240,0.12);
+  border: 1px solid rgba(157, 59, 220, 0.25);
+  border-radius: 30px;
+  padding-top: 6%;
+  padding-bottom: 10%;
+  transition: box-shadow 0.3s ease-out;
+}
+.trending-nft-container:hover{
+	box-shadow: 0px 6px 20px rgba(121,34,240,0.3);
+}
+@media only screen and (max-width: 1199px){
+	.trending-nft-container{
+		margin-bottom: 6%;
+	}
+}
+@media only screen and (max-width: 575px){
+	.trending-nft-container{
+		width: 40%;
+		margin: 0 auto;
+		margin-bottom: 6%;
+	}
+}
+@media only screen and (max-width: 520px){
+	.trending-nft-container{
+		width: 50%;
+	}
+}
+@media only screen and (max-width: 450px){
+	.trending-nft-container{
+		width: 60%;
+	}
+}
+@media only screen and (max-width: 350px){
+	.trending-nft-container{
+		width: 70%;
+	}
+}
+.trending-nft-img{
+  margin: 0;
+  padding: 0;
+  width: 130px;
+  width: 60%;
+  border-radius: 100%;
+  box-shadow: 0px 6px 20px rgba(121,34,240,0.12);
+}
+.trending-nft-name{
+  position: relative;
+  margin-top: 4%;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 500;
+  font-size: 80%;
+  color: #ffffff;
+}
+.volume, .floor-price{
+	font-family: 'Exo 2', sans-serif;
+	font-weight: 100;
+	font-size: 75%;
+	color: rgba(255,255,255,0.7);
+}
+.platform-icon{
+	width: 40px;
+}
+.trending-nft-price{
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 100%;
+  color: rgba(255,255,255,0.7);
+}
+.tr-chart{
+  position: relative;
+  margin-top: 3%;
+  width: 70%;
+}
+h1{
+	position: relative;
+	margin-top: 2%;
+	font-family: "Exo 2", sans-serif;
+	font-weight: 300;
+	font-size: 140%;
+	color: #ffffff;
+}
+.market-description-text{
+	font-family: "Exo 2", sans-serif;
+	font-weight: 100;
+	font-size: 100%;
+	color: rgba(255,255,255,0.7);
+}
+/* Metacoinmarket news */
+.latest-articles-title{
+	position: relative;
+}
+@media only screen and (max-width: 1199px){
+	.latest-articles-title{
+  	text-align: center;
+	}
+}
+.news-container{
+	position: relative;
+	margin-top: 3%;
+}
+@media only screen and (max-width: 1199px){
+	.news-container{
+		width: 70%;
+	}
+}
+@media only screen and (max-width: 991px){
+	.news-container{
+		width: 90%;
+	}
+}
+@media only screen and (max-width: 767px){
+	.news-container{
+		width: 100%;
+	}
+}
+article{
+  background: linear-gradient(to top, rgba(4,3,33,0) 0%,rgba(140,24,174,0) 30%,rgba(204,34,240,0.07) 100%);
+  background: rgba(47, 25, 94, 0.25);
+  box-shadow: 0px 6px 20px rgba(121,34,240,0.12);
+  border: 1px solid rgba(157, 59, 220, 0.2);
+  border-radius: 20px;
+  transition: box-shadow 0.3s ease-out;
+}
+article:hover{
+	box-shadow: 0px 6px 20px rgba(121,34,240,0.3);
+}
+@media only screen and (max-width: 991px){
+	article{
+		margin-bottom: 5%;
+	}
+}
+@media only screen and (max-width: 575px){
+	article{
+		width: 65%;
+		margin: 0 auto;
+		margin-bottom: 4%;
+	}
+}
+@media only screen and (max-width: 470px){
+	article{
+		width: 75%;
+		margin: 0 auto;
+		margin-bottom: 4%;
+	}
+}
+@media only screen and (max-width: 350px){
+	article{
+		width: 90%;
+		margin: 0 auto;
+		margin-bottom: 4%;
+	}
+}
+.featured-article{
+	margin-bottom: 1.2%;
+	background: rgba(47, 25, 94, 0.5);
+	border: 1px solid rgba(157, 59, 220, 0.15);
+}
+@media only screen and (max-width: 1199px){
+	.featured-article{
+		padding: 2%;
+		margin-bottom: 3%;
+	}
+}
+@media only screen and (max-width: 575px){
+	.featured-article{
+		padding: 3%;
+	}
+}
+.featured-article-container{
+	padding: 1.5%;
+}
+.featured-img-article{
+	width: 100%;
+	padding: 0;
+	margin-top: 0%;
+  border-radius: 15px;
+  opacity: 0.7;
+  transition: opacity ease-out 1s;
+}
+.featured-img-article:hover{
+	opacity: 1;
+}
+.img-article{
+		width: 90%;
+		padding: 0;
+		margin: 0 auto;
+		margin-top: 4%;
+  	border-top-left-radius: 7px;
+  	border-top-right-radius: 7px;
+  	border-radius: 20px;
+  	box-shadow: 0px 6px 20px rgba(121,34,240,0.12);
+}
+.featured-article-title{
+  position: relative;
+  margin-top: 0%;
+  margin-left: 0%;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 500;
+  font-size: 200%;
+  color: #ffffff;
+}
+@media only screen and (max-width: 991px){
+	.featured-article-title{
+		font-size: 170%;
+	}
+}
+@media only screen and (max-width: 767px){
+	.featured-article-title{
+		font-size: 150%;
+	}
+}
+@media only screen and (max-width: 575px){
+	.featured-article-title{
+		font-size: 120%;
+	}
+}
+@media only screen and (max-width: 450px){
+	.featured-article-title{
+		font-size: 105%;
+	}
+}
+.article-title{
+  position: relative;
+  margin-top: 5%;
+  margin-left: 5%;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 500;
+  font-size: 84%;
+  color: #ffffff;
+}
+.article-tags{
+	list-style: none;
+	margin: 0;
+	margin-left: 5%;
+	padding: 0;
+}
+.featured-article-tags{
+	margin-left: 0%;
+}
+.article-tags li{
+	display: inline;
+	font-family: 'Exo 2', sans-serif;
+	font-weight: 400;
+	font-size: 80%;
+	color: rgba(255,255,255,0.9);
+	background: rgba(157, 59, 220, 0.7);
+	background: rgba(47, 25, 94, 1);
+	padding: 1% 2% 1% 2%;
+	border-radius: 5px;
+}
+.featured-article-tags li{
+	margin-left: 0%;
+	background: #442487;
+}
+.featured-article-text{
+  width: 90%;
+  position: relative;
+  margin-top: 3%;
+  margin-left: 0%;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 300;
+  font-size: 100%;
+  color: rgba(255,255,255,0.5);	
+}
+@media only screen and (max-width: 767px){
+	.featured-article-text{
+		font-size: 95%;
+	}
+}
+@media only screen and (max-width: 575px){
+	.featured-article-text{
+		font-size: 90%;
+	}
+}
+.article-text{
+  width: 90%;
+  position: relative;
+  margin-left: 5%;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 300;
+  font-size: 80%;
+  color: rgba(255,255,255,0.5);
+}
+.read-more-btn{
+	position: relative;
+	margin-top: 3%;
+	font-family: "Exo 2", sans-serif;
+	font-weight: 400;
+	font-size: 90%;
+	color: #ffffff;
+	background: linear-gradient(to right, rgba(112,109,238,1) 0%,rgba(121,34,240,1) 100%);
+	padding: 1.2% 3% 1.2% 3%;
+	border-radius: 5px;
+	border: none;
+}
+@media only screen and (max-width: 1199px){
+	.read-more-btn{
+		padding: 1.5% 3.5% 1.5% 3.5%;
+	}
+}
+@media only screen and (max-width: 575px){
+	.read-more-btn{
+		padding: 1.7% 4% 1.7% 4%;
+	}
+}
+.read-more-btn:hover{
+	color: #ffffff;
+	box-shadow: 0px 6px 20px rgba(121,34,240,0.35);
+}

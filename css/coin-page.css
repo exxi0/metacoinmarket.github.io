@@ -1,0 +1,703 @@
+html,body{
+	background: linear-gradient(to right, #130b27 0%,#140527 100%);
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+}
+.highlight-purple{
+	font-weight: 600;
+	color: #8240db;
+}
+.highlight-blue{
+	font-weight: 600;
+	color: #404fdb;
+}
+.info-coin-wrapper{
+	position: relative;
+	margin-top: 3%;
+}
+.rank{
+	position: relative;
+	margin-top: 2%;
+	font-family: 'Exo 2', sans-serif;
+	font-weight: 400;
+	font-size: 90%;
+	color: #ffffff;
+}
+@media only screen and (max-width: 991px){
+	.rank{
+		text-align: center;
+	}
+}
+.rank span{
+	border-radius: 5px;
+	background: #381870;
+	padding: 2px 12px 2px 12px;
+}
+.img-coin{
+	width: 40px;
+}
+.coin{
+	position: relative;
+	margin-top: 3%;
+}
+@media only screen and (max-width: 991px){
+	.coin{
+		align-items: center;
+		justify-content: center;
+	}
+}
+.coin-name{
+	font-family: "Exo 2", sans-serif;
+	font-weight: 400;
+	font-size: 120%;
+	color: #ffffff;
+}
+.coin-name span{
+	font-weight: 300;
+	font-size: 70%;
+	border: 1px solid rgba(255, 255, 255, 0.4);
+	border-radius: 5px;
+	color: rgba(255,255,255,0.4);
+	padding: 3px;
+}
+.coin-price{
+	font-family: 'Exo 2', sans-serif;
+	font-weight: 400;
+	font-size: 180%;
+	color: #ffffff;
+}
+@media only screen and (max-width: 991px){
+	.coin-price{
+		text-align: center;
+	}
+}
+.coin-price-change{
+	font-size: 60%;
+	font-weight: 400;
+	color: #429132;
+}
+.contract{
+	font-family: 'Exo 2', sans-serif;
+	font-weight: 100;
+	font-size: 85%;
+	color: rgba(255,255,255,0.4);
+}
+@media only screen and (max-width: 991px){
+	.contract{
+		text-align: center;
+	}
+}
+.eth-contract{
+	position: relative;
+	margin-top: 1%;
+	font-family: "Exo 2", sans-serif;
+	font-weight: 400;
+	font-size: 90%;
+	color: #ffffff;
+	border-radius: 5px;
+	background: #381870;
+	background: #2f195e;
+	padding: 2px 12px 2px 12px;
+}
+.eth-contract:hover{
+	color: #ffffff;
+	background: #5725b0;
+}
+@media only screen and (max-width: 991px){
+	.eth-contract{
+		margin: 0 auto;
+	}
+}
+.eth-icon{
+	display: inline-block;
+	width: 20px;
+}
+.metamask-icon{
+	display: inline-block;
+	width: 20px;
+}
+.circulating-supply{
+	position: relative;
+	margin-top: 2%;
+	font-family: 'Exo 2', sans-serif;
+	font-weight: 100;
+	font-size: 85%;
+	color: rgba(255,255,255,0.4);
+}
+@media only screen and (max-width: 991px){
+	.circulating-supply{
+		text-align: center;
+	}
+}
+.circulating{
+	font-weight: 400;
+	font-size: 100%;
+	color: #ffffff;
+}
+.circulation-progress{
+	width: 50%;
+	border-radius: 30px;
+	height: 8px;
+	background: #25134a;
+}
+@media only screen and (max-width: 991px){
+	.circulation-progress{
+		margin: 0 auto;
+	}
+}
+.progress-bar{
+	background: linear-gradient(to left, rgba(121,34,240,1) 0%,rgba(109,134,237,1) 100%);
+}
+.total-supply, .max-supply, .website, .community{
+	position: relative;
+	font-family: 'Exo 2', sans-serif;
+	font-weight: 100;
+	font-size: 85%;
+	color: rgba(255,255,255,0.4);
+}
+@media only screen and (max-width: 991px){
+	.total-supply, .max-supply, .website, .community{
+		text-align: center;
+	}
+}
+.total-supply span, .max-supply span{
+	font-weight: 300;
+	font-size: 100%;
+	color: #ffffff;
+}
+.total-supply{
+	margin-top: 2.5%;
+}
+.coin-link-btn{
+	display: inline-flex;
+	position: relative;
+	margin-top: 1%;
+	margin-right: 2%;
+	margin-bottom: 1%;
+	font-family: "Exo 2", sans-serif;
+	font-weight: 400;
+	font-size: 90%;
+	color: #ffffff;
+	border-radius: 5px;
+	background: #381870;
+	background: #2f195e;
+	padding: 2px 12px 2px 12px;
+}
+.coin-link-btn:hover{
+	color: #ffffff;
+	background: #5725b0;
+}
+@media only screen and (max-width: 991px){
+	.coin-link-btn{
+		width: 60%;
+		padding-top: 1%;
+		padding-bottom: 1%;
+		margin-left: 20%;
+		margin-bottom: 2%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+.community{
+	margin-top: 2%;
+}
+/* --------------------- Coin chart --------------------- */
+.chart-container{
+	width: 100%;
+}
+.timeframe{
+	position: relative;
+	margin-top: 2%;
+	background: #381870;
+	border-radius: 10px !important;
+}
+.timeframe button{
+	font-family: 'Exo 2', sans-serif;
+	font-weight: 300;
+	font-size: 90%;
+	color: rgba(255,255,255,0.7) !important;
+	border-radius: 10px;
+}
+.timeframe button:hover{
+	background: #5725b0;
+}
+.price-stats-container{
+	background: #2f195e;
+	border-radius: 10px;
+	padding: 3% 4% 3% 4%;
+}
+@media only screen and (max-width: 1199px){
+	.price-stats-container{
+		width: 65%;
+		margin: 0 auto;
+		margin-top: 3%;
+	}
+}
+@media only screen and (max-width: 991px){
+	.price-stats-container{
+		width: 90%;
+		margin: 0 auto;
+		margin-top: 6%;
+	}
+}
+@media only screen and (max-width: 767px){
+	.price-stats-container{
+		width: 100%;
+		margin: 0 auto;
+		margin-top: 6%;
+	}
+}
+.price-stats-title{
+	font-family: "Exo 2", sans-serif;
+	font-weight: 400;
+	font-size: 140%;
+	color: #ffffff;
+}
+.price-stats-section-title{
+	font-family: 'Exo 2', sans-serif;
+	font-weight: 300;
+	font-size: 90%;
+	color: rgba(255,255,255,0.4);
+}
+.price-stats-table th{
+	font-family: "Exo 2", sans-serif;
+	font-weight: 300;
+	font-size: 90%;
+	color: rgba(255,255,255,0.4);
+	border-color: rgba(255, 255, 255, 0.1) !important;
+	padding-top: 3% !important;
+	padding-bottom: 3%;
+}
+.price-stats-table td{
+	text-align: right;
+	font-family: "Exo 2", sans-serif;
+	font-weight: 400;
+	font-size: 100%;
+	color: rgba(255,255,255,1);
+	border-color: rgba(255, 255, 255, 0.1) !important;
+	padding-top: 3% !important;
+	padding-bottom: 3%;
+}
+/*
+	Coin Market
+	Exchanges Table
+*/
+.coin-market-title{
+	position: relative;
+	margin-top: 5%;
+	font-family: "Exo 2", sans-serif;
+	font-weight: 400;
+	font-size: 160%;
+	color: #ffffff;
+}
+@media only screen and (max-width: 767px){
+	.coin-market-title{
+		align-items: center;
+		justify-content: center;
+	}
+}
+.market-description-text{
+	font-family: "Exo 2", sans-serif;
+	font-weight: 100;
+	font-size: 100%;
+	color: rgba(255,255,255,0.7);
+}
+@media only screen and (max-width: 767px){
+	.market-description-text{
+		text-align: center;
+	}
+}
+.pos-change{
+	font-weight: 400;
+	color: #429132;
+}
+.min-change{
+	font-weight: 400;
+	color: #E34962;
+}
+.crypto-img-table{
+	width: 20px;
+	margin-right: 2%;
+}
+.exchanges-table{
+	background: linear-gradient(to right, rgba(4,3,33,0) 0%,rgba(140,24,174,0) 0%,rgba(204,34,240,0.07) 100%) !important;
+}
+.exchanges-table thead{
+	background: #090213 !important;
+	border-bottom-width: 0px !important;
+}
+.exchanges-table thead tr{
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+.exchanges-table thead th{
+	font-family: "Exo 2", sans-serif;
+	font-weight: 400 !important;
+	font-size: 90% !important;
+	color: rgba(157, 59, 220, 0.7);
+	color: #563bdc;
+	color: #ffffff;
+	padding-top: 2% !important;
+	padding-bottom: 2% !important;
+}
+.exchanges-table tr{
+	border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+	background: none;
+	transition: background 0.5s ease-out, box-shadow 0.3s ease-out;
+}
+.exchanges-table tr:hover{
+	background: rgba(0, 0, 0, 0.25);
+	box-shadow: 0px 6px 20px rgba(121,34,240,0.3);
+}
+.exchanges-table td{
+	font-family: "Exo 2", sans-serif;
+	font-weight: 300;
+	color: #ffffff;
+	border-color: rgba(255, 255, 255, 0.1) !important;
+	padding-top: 1.7% !important;
+	padding-bottom: 1.7% !important;
+}
+.crypto-symbol-table{
+	font-weight: 300;
+	font-size: 80%;
+	color: rgba(255,255,255,0.4);
+}
+.green-status{
+	color: #429132;
+}
+.load-more-btn{
+	font-family: "Exo 2", sans-serif;
+	font-weight: 100;
+	font-size: 100%;
+	color: rgba(255,255,255,0.7);
+	border: 1px solid rgba(255,255,255,0.4);
+}
+/* --------------------- Trending Coins --------------------- */
+.trending-coin-wrapper{
+	position: relative;
+}
+@media only screen and (max-width: 1199px){
+	.trending-coin-wrapper{
+		width: 75%;
+	}
+}
+@media only screen and (max-width: 991px){
+	.trending-coin-wrapper{
+		width: 100%;
+	}
+}
+.trending-title{
+	margin-top: 2%;
+}
+@media only screen and (max-width: 1199px){
+	.trending-title{
+		text-align: center;
+	}
+}
+.trending-coin-container{
+  background: linear-gradient(to top, rgba(4,3,33,0) 0%,rgba(140,24,174,0) 30%,rgba(204,34,240,0.07) 100%);
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+  border: 1px solid rgba(157, 59, 220, 0.7);
+  border-radius: 20px;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  box-shadow: 0px 6px 20px rgba(121,34,240,0.09);
+  transition: box-shadow 0.3s ease-out;
+}
+.trending-coin-container:hover{
+	box-shadow: 0px 6px 20px rgba(121,34,240,0.3);
+}
+@media only screen and (max-width: 1199px){
+	.trending-coin-container{
+		width: 95%;
+		margin-bottom: 6%;
+	}
+}
+@media only screen and (max-width: 575px){
+	.trending-coin-container{
+		width: 80%;
+		margin: 0 auto;
+		margin-bottom: 6%;
+	}
+}
+@media only screen and (max-width: 450px){
+	.trending-coin-container{
+		width: 100%;
+	}
+}
+.trending-coin-img{
+  margin: 0;
+  padding: 0;
+  width: 40px;
+  height: 40px!important;
+}
+@media only screen and (max-width: 350px){
+	.trending-coin-img{
+		width: 32px;
+		height: 32px !important;
+	}
+}
+.trending-coin-name{
+  position: relative;
+  margin-top: 4%;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 500;
+  font-size: 77%;
+  color: #ffffff;
+}
+.trending-coin-link{
+	color: #ffffff;
+	text-decoration: none;
+}
+.trending-coin-link:hover{
+	color: #ffffff;
+}
+.trending-coin-price{
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 100%;
+  color: rgba(255,255,255,0.7);
+}
+.tr-chart{
+  position: relative;
+  margin-top: 3%;
+  width: 70%;
+}
+h1{
+	position: relative;
+	margin-top: 2%;
+	font-family: "Exo 2", sans-serif;
+	font-weight: 300;
+	font-size: 140%;
+	color: #ffffff;
+}
+/* -------------- Metacoinmarket news --------------  */
+.news-container{
+	position: relative;
+	margin-top: 3%;
+}
+@media only screen and (max-width: 1199px){
+	.news-container{
+		width: 70%;
+	}
+}
+@media only screen and (max-width: 991px){
+	.news-container{
+		width: 90%;
+	}
+}
+@media only screen and (max-width: 767px){
+	.news-container{
+		width: 100%;
+	}
+}
+.latest-articles-title{
+	position: relative;
+}
+@media only screen and (max-width: 1199px){
+	.latest-articles-title{
+		text-align: center;
+	}
+}
+article{
+  background: linear-gradient(to top, rgba(4,3,33,0) 0%,rgba(140,24,174,0) 30%,rgba(204,34,240,0.07) 100%);
+  background: rgba(47, 25, 94, 0.25);
+  box-shadow: 0px 6px 20px rgba(121,34,240,0.12);
+  border: 1px solid rgba(157, 59, 220, 0.2);
+  border-radius: 20px;
+  transition: box-shadow 0.3s ease-out;
+}
+article:hover{
+	box-shadow: 0px 6px 20px rgba(121,34,240,0.3);
+}
+@media only screen and (max-width: 991px){
+	article{
+		margin-bottom: 5%;
+	}
+}
+@media only screen and (max-width: 575px){
+	article{
+		width: 65%;
+		margin: 0 auto;
+		margin-bottom: 4%;
+	}
+}
+@media only screen and (max-width: 470px){
+	article{
+		width: 75%;
+		margin: 0 auto;
+		margin-bottom: 4%;
+	}
+}
+@media only screen and (max-width: 350px){
+	article{
+		width: 90%;
+		margin: 0 auto;
+		margin-bottom: 4%;
+	}
+}
+.featured-article{
+	margin-bottom: 1.2%;
+	background: rgba(47, 25, 94, 0.5);
+	border: 1px solid rgba(157, 59, 220, 0.15);
+}
+@media only screen and (max-width: 1199px){
+	.featured-article{
+		padding: 2%;
+		margin-bottom: 3%;
+	}
+}
+@media only screen and (max-width: 575px){
+	.featured-article{
+		padding: 3%;
+	}
+}
+.featured-article-container{
+	padding: 1.5%;
+}
+.featured-img-article{
+	width: 100%;
+	padding: 0;
+	margin-top: 0%;
+  border-radius: 15px;
+  opacity: 0.7;
+  transition: opacity ease-out 1s;
+}
+.featured-img-article:hover{
+	opacity: 1;
+}
+.img-article{
+	width: 90%;
+	padding: 0;
+	margin: 0 auto;
+	margin-top: 4%;
+  border-radius: 15px;
+}
+.featured-article-title{
+  position: relative;
+  margin-top: 0%;
+  margin-left: 0%;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 500;
+  font-size: 200%;
+  color: #ffffff;
+}
+@media only screen and (max-width: 991px){
+	.featured-article-title{
+		font-size: 170%;
+	}
+}
+@media only screen and (max-width: 767px){
+	.featured-article-title{
+		font-size: 150%;
+	}
+}
+@media only screen and (max-width: 575px){
+	.featured-article-title{
+		font-size: 120%;
+	}
+}
+@media only screen and (max-width: 450px){
+	.featured-article-title{
+		font-size: 105%;
+	}
+}
+.article-title{
+  position: relative;
+  margin-top: 5%;
+  margin-left: 5%;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 500;
+  font-size: 84%;
+  color: #ffffff;
+}
+.article-tags{
+	list-style: none;
+	margin: 0;
+	margin-left: 5%;
+	padding: 0;
+}
+.featured-article-tags{
+	margin-left: 0%;
+}
+.article-tags li{
+	display: inline;
+	font-family: 'Exo 2', sans-serif;
+	font-weight: 400;
+	font-size: 80%;
+	color: rgba(255,255,255,0.9);
+	background: rgba(157, 59, 220, 0.7);
+	background: rgba(47, 25, 94, 1);
+	padding: 1% 2% 1% 2%;
+	border-radius: 5px;
+}
+.featured-article-tags li{
+	margin-left: 0%;
+	background: #442487;
+}
+.featured-article-text{
+  width: 90%;
+  position: relative;
+  margin-top: 3%;
+  margin-left: 0%;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 300;
+  font-size: 100%;
+  color: rgba(255,255,255,0.5);	
+}
+@media only screen and (max-width: 767px){
+	.featured-article-text{
+		font-size: 95%;
+	}
+}
+@media only screen and (max-width: 575px){
+	.featured-article-text{
+		font-size: 90%;
+	}
+}
+.article-text{
+  width: 90%;
+  position: relative;
+  margin-left: 5%;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 300;
+  font-size: 80%;
+  color: rgba(255,255,255,0.5);
+}
+.read-more-btn{
+	position: relative;
+	margin-top: 3%;
+	font-family: "Exo 2", sans-serif;
+	font-weight: 400;
+	font-size: 90%;
+	color: #ffffff;
+	background: linear-gradient(to right, rgba(112,109,238,1) 0%,rgba(121,34,240,1) 100%);
+	padding: 1.2% 3% 1.2% 3%;
+	border-radius: 5px;
+	border: none;
+}
+@media only screen and (max-width: 1199px){
+	.read-more-btn{
+		padding: 1.5% 3.5% 1.5% 3.5%;
+	}
+}
+@media only screen and (max-width: 575px){
+	.read-more-btn{
+		padding: 1.7% 4% 1.7% 4%;
+	}
+}
+.read-more-btn:hover{
+	color: #ffffff;
+	box-shadow: 0px 6px 20px rgba(121,34,240,0.35);
+}
+.description-text{
+	font-family: "Exo 2", sans-serif;
+	font-weight: 100;
+	font-size: 100%;
+	color: rgba(255,255,255,0.7);
+}
+@media only screen and (max-width: 1199px){
+	.description-text{
+		text-align: center;
+	}
+}

@@ -1,0 +1,156 @@
+/* Sub container */
+.sub-container{
+	position: relative;
+	margin-top: 3%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	background: #1f0840;
+}
+.sub-title{
+	font-family: "Exo 2", sans-serif;
+	font-weight: 300;
+	font-size: 180%;
+	color: #ffffff;
+}
+@media only screen and (max-width: 991px){
+	.sub-title{
+		margin-top: 3%;
+		text-align: center;
+	}
+}
+.sub-text{
+	position: relative;
+	font-family: "Exo 2", sans-serif;
+	font-weight: 100;
+	font-size: 100%;
+	color: rgba(255,255,255,0.4);
+}
+@media only screen and (max-width: 991px){
+	.sub-text{
+		text-align: center;
+	}
+}
+.sub-img{
+	width: 100%;
+}
+@media only screen and (max-width: 991px){
+	.sub-img{
+		margin: 0 auto;
+	}
+}
+@media only screen and (max-width: 380px){
+	.sub-img{
+		width: 130%;
+		margin-left: -15%;
+	}
+}
+.subscribe-btn{
+	position: relative;
+	margin-top: 3%;
+	font-family: "Exo 2", sans-serif;
+	font-weight: 400;
+	font-size: 90%;
+	color: #ffffff;
+	background: linear-gradient(to right, rgba(112,109,238,1) 0%,rgba(121,34,240,1) 100%);
+	padding: 12px 18px 12px 18px;
+	border-radius: 5px;
+	border: none;
+}
+@media only screen and (max-width: 991px){
+	.subscribe-btn{
+		margin: 0 auto;
+		margin-top: 3%;
+		text-align: center;
+	}
+}
+.subscribe-btn:hover{
+	color: #ffffff;
+	box-shadow: 0px 6px 20px rgba(121,34,240,0.35);
+}
+footer{
+	position: relative;
+	margin-top: 0%;
+	padding-top: 3.5%;
+	padding-bottom: 3%;
+	background: #090213;
+	background: none;
+}
+.brand-footer{
+	position: relative;
+}
+@media only screen and (max-width: 1199px){
+  .brand-footer{
+    margin: 0 auto;
+  }
+}
+.footer-description{
+	width: 80%;
+	position: relative;
+	margin-top: 2%;
+	font-family: "Outfit", sans-serif;
+	font-weight: 300;
+	font-size: 105%;
+	color: rgba(255, 255, 255, 0.3);	
+}
+@media only screen and (max-width: 1199px){
+  .footer-description{
+  	margin: 0 auto;
+  	margin-top: 0%;
+  	margin-bottom: 3%;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 576px){
+  .footer-description{
+  	width: 100%;
+  }
+}
+.menu-footer-title{
+	position: relative;
+	margin-left: 10%;
+	font-family: Outfit, sans-serif;
+	font-weight: 400;
+	font-size: 110%;
+	color: #b9d8de;	
+}
+@media only screen and (max-width: 1199px){
+  .menu-footer-title{
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 575px){
+  .menu-footer-title{
+    margin-bottom: 2%;
+  }
+}
+.menu-footer-list{
+	position: relative;
+	margin-top: 6%;
+	margin-left: 10%;
+	padding: 0;
+	list-style: none;
+}
+@media only screen and (max-width: 1199px){
+  .menu-footer-list{
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+.menu-footer-list li{
+	display: block;
+	margin-bottom: 3%;
+}
+.menu-footer-list li a{
+	font-family: "Exo 2", sans-serif;
+	font-weight: 100;
+	font-size: 100%;
+	text-decoration: none;
+	color: rgba(255, 255, 255, 0.7);		
+}
+.menu-footer-list li a:hover{
+	color: #779ce8;
+}
+.badge{
+	font-weight: 400;
+}

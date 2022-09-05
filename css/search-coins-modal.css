@@ -1,0 +1,127 @@
+.modal-header{
+	border: none;
+}
+.btn-close{
+	font-size: 250%;
+	background: none !important;
+	color: #ffffff !important;
+}
+.btn-close:focus{
+	border: none !important;
+}
+.modal-content{
+	background: #140526;
+	border-radius: 20px;
+	padding-bottom: 4%;
+	box-shadow: 0px 6px 20px rgba(121,34,240,0.25);
+}
+.search-coins-nft-container{
+	position: relative;
+	margin-top: 1%;
+	margin-bottom: 4%;
+}
+.search-icon{
+	font-weight: bold;
+	font-size: 120%;
+	color: #ffffff;
+}
+input[type=text]{
+	width: 90%;
+	position: relative;
+	margin-left: 2%;
+	font-family: 'Exo 2', sans-serif;
+	font-weight: 300;
+	font-size: 100%;
+	color: rgba(255,255,255,0.4);
+	border: none;
+	background: none;
+}
+input:focus{
+	outline: none;
+}
+.wallet-modal-img{
+	width: 70px;
+}
+.modal-title{
+	font-family: "Exo 2", sans-serif;
+	font-weight: 500;
+	font-size: 140%;
+	color: #ffffff;
+}
+.connect-wallet-description{
+	font-family: "Outfit", sans-serif;
+	font-weight: 300;
+	font-size: 100%;
+	color: rgba(255, 255, 255, 0.37);
+}
+.modal-body{
+	border: none;
+}
+.trending-coins-nft-label{
+	font-family: 'Exo 2', sans-serif;
+	font-weight: 300;
+	font-size: 100%;
+	color: #ffffff;
+}
+.trending-coins-table{
+	background: linear-gradient(to right, rgba(4,3,33,0) 0%,rgba(140,24,174,0) 0%,rgba(204,34,240,0.07) 100%) !important;
+	border: none;
+}
+.trending-coins-table tr, .trending-coins-table td{
+	border: none;
+}
+.trending-coins-table tr{
+
+}
+.trending-coins-table tr:hover{
+	background: rgba(0, 0, 0, 0.25);
+	box-shadow: 0px 6px 20px rgba(121,34,240,0.3);
+}
+.trending-coins-table th{
+	font-family: "Exo 2", sans-serif;
+	font-weight: 400 !important;
+	font-size: 100% !important;
+	color: rgba(157, 59, 220, 0.7);
+	color: #563bdc;
+	color: #ffffff;
+	padding-top: 2% !important;
+	padding-bottom: 2% !important;
+	border: none !important;
+}
+.trending-coins-table td{
+	font-family: 'Exo 2', sans-serif;
+	font-weight: 300;
+	font-size: 100%;
+	color: rgba(255,255,255,0.4);
+	text-align: right;
+}
+.modal-body ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.modal-body ul li{
+	font-family: "Exo 2", sans-serif;
+	font-weight: 500;
+	font-size: 100%;
+	background: #2d2f84;
+	border-radius: 5px;
+	margin-bottom: 2%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+.modal-body ul li:hover{
+	background: #3d3fb7;
+}
+.modal-body ul li button{
+	color: #ffffff;
+	background: none;
+	border: none;
+}
+.wallet-icon-modal{
+	display: inline-block;
+	width: 30px;
+}
+.modal-footer{
+	border: none;
+}

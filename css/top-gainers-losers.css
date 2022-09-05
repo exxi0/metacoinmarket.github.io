@@ -1,0 +1,149 @@
+html,body{
+	background: linear-gradient(to right, #130b27 0%,#140527 100%);
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+}
+.highlight-purple{
+	font-weight: 600;
+	color: #8240db;
+}
+.highlight-blue{
+	font-weight: 600;
+	color: #404fdb;
+}
+header{
+	position: relative;
+	margin-top: 0;
+
+}
+.top-hero{
+	position: relative;
+	margin-top: 1%;
+	width: 250px;
+	z-index: 0;
+}
+.header-title{
+	position: relative;
+	margin-top: -5%;
+	padding-top: 0%;
+	font-family: "Exo 2", sans-serif;
+	font-weight: 500;
+	font-size: 170%;
+	color: #ffffff;
+	z-index: 99;
+}
+.header-sub-text{
+	position: relative;
+	margin-top: 1%;
+	font-family: "Exo 2", sans-serif;
+	font-weight: 300;
+	font-size: 100%;
+	color: rgba(255,255,255,0.4);
+	z-index: 99;
+}
+/* Table */
+.timeframe{
+	position: relative;
+	margin-top: 2%;
+	background: #381870;
+	border-radius: 10px !important;
+}
+.timeframe button{
+	font-family: 'Exo 2', sans-serif;
+	font-weight: 300;
+	font-size: 90%;
+	color: rgba(255,255,255,0.7) !important;
+	border-radius: 10px;
+}
+.timeframe button:hover{
+	background: #5725b0;
+}
+.top-gainers-losers-container{
+	position: relative;
+	margin-top: 3%;
+}
+.top-gainers-title, .top-losers-title{
+	position: relative;
+	margin-bottom: 2%;
+	font-family: 'Gruppo', sans-serif;
+	font-weight: 400;
+	font-size: 120%;
+	color: #ffffff;
+}
+.top-table{
+	position: relative;
+}
+@media only screen and (max-width: 1199px){
+	.top-table{
+		margin-bottom: 3%;
+	}
+}
+.crypto-img-table{
+	width: 20px;
+	margin-right: 2%;
+}
+.top-gainers-losers-table{
+	background: linear-gradient(to right, rgba(4,3,33,0) 0%,rgba(140,24,174,0) 0%,rgba(204,34,240,0.07) 100%) !important;
+}
+.top-gainers-losers-table thead{
+	background: #090213 !important;
+	border-bottom-width: 0px !important;
+}
+.top-gainers-losers-table thead tr{
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+.top-gainers-losers-table thead th{
+	font-family: "Exo 2", sans-serif;
+	font-weight: 400 !important;
+	font-size: 90% !important;
+	color: rgba(157, 59, 220, 0.7);
+	color: #563bdc;
+	color: #ffffff;
+	padding-top: 2% !important;
+	padding-bottom: 2% !important;
+}
+.top-gainers-losers-table tr{
+	border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+	background: none;
+	box-shadow: 0px 6px 20px rgba(121,34,240,0);
+	transition: background 0.3s ease-out, box-shadow 0.3s ease-out;
+}
+.top-gainers-losers-table tr:hover{
+	background: rgba(0, 0, 0, 0.25);
+	box-shadow: 0px 6px 20px rgba(121,34,240,0.3);
+}
+.top-gainers-losers-table td{
+	font-family: "Exo 2", sans-serif;
+	font-weight: 300;
+	font-size: 90%;
+	color: #ffffff;
+	border-color: rgba(255, 255, 255, 0.1) !important;
+	padding-top: 2.8% !important;
+	padding-bottom: 2.8% !important;
+}
+.pos-change{
+	font-weight: 400;
+	color: #429132;
+}
+.min-change{
+	font-weight: 400;
+	color: #E34962;
+}
+.crypto-symbol-table{
+	font-weight: 300;
+	font-size: 80%;
+	color: rgba(255,255,255,0.4);
+}
+.load-more-btn{
+	font-family: "Exo 2", sans-serif;
+	font-weight: 100;
+	font-size: 100%;
+	color: rgba(255,255,255,0.7);
+	border: 1px solid rgba(255,255,255,0.4);
+}
+.load-more-btn:hover{
+	color: #ffffff;
+	border: 1px solid rgba(121,34,240,1);
+	background: linear-gradient(to right, rgba(112,109,238,1) 0%,rgba(121,34,240,1) 100%);
+	box-shadow: 0px 2px 7px rgba(121,34,240,0.25);
+}

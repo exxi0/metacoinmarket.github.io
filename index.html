@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<head>
+	<title>Metacoinmarket</title>
+    <meta charset="UTF-8">
+  	<meta name="description" content="The Leading Metaverse Crypto market data provider">
+  	<meta name="keywords" content="metaverse market">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/search-coins-modal.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@100;300;500;600;800&family=Outfit:wght@100;200;400;600;700;800;900&family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap" rel="stylesheet">
+    <link href="fonts/remixicon.css" rel="stylesheet">
+</head>
+<html>
+
+<body>
+
+<div class="header-container container-fluid">
+
+<!------ Ads banner ------>
+<div class="ads-container d-flex">
+    <img class="ads-banner d-block mx-auto" src="assets/banner-ads5.png">
+</div>
+
+<hr class="header-sep-line">
+
+<nav class="metacoinmarket-nav navbar navbar-expand-xl navbar-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#"><img src="assets/logo.png" alt="metacoinmarket brand" style="width:200px;" class="rounded-pill"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#metacoinmarketnav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="metacoinmarketnav">
+    <ul class="navbar-nav mx-auto">
+        <li class="nav-item">
+            <a class="nav-link" href="index.html">Coins <span class="highlight-blue">2986</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">MCap <span class="highlight-purple">$11,57B</span> <span class="pos-change">+1.25%</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Vol <span class="highlight-blue">$1,26B</span> <span class="min-change">-0.69%</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="top-gainers-losers.html">Gainers/Losers</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="nft-market.html">NFT <span class="badge bg-primary">New</span></a>
+        </li>
+    </ul>
+    <button class="search-button d-flex" type="button" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="ri-search-line"></i>&nbsp;&nbsp;Search any coins, NFT</button>
+    </div>
+  </div>
+</nav>
+
+</div>
+
+<div class="container">
+
+<!-- Search Coins NFT Modal -->
+<div class="modal fade" id="searchModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal"><i class="ri-close-circle-line"></i></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <div class="search-coins-nft-container d-flex">
+            <div class="search-icon"><i class="ri-search-line"></i></div>
+            <input type="text" id="search-coins-nft" name="search-coins-nft" value="What are you looking for ?">
+        </div>
+        <hr>
+        <table class="table trending-coins-table">
+            <tbody>
+                <h5 class="trending-coins-nft-label">&#128293; Trending coins and NFTs</h5>
+                <tr>
+                    <th><img class="crypto-img-table" src="assets/10729.png">UFO Gaming <span class="crypto-symbol-table">UFO</span></th>
+                    <td>#718</td>
+                </tr>
+                <tr>
+                    <th><img class="crypto-img-table" src="assets/11206.png">Bloktopia <span class="crypto-symbol-table">BLOK</span></th>
+                    <td>#87</td>
+                </tr>
+                <tr>
+                    <th><img class="crypto-img-table" src="assets/17145.png">League of Kingdoms Arena <span class="crypto-symbol-table">LOKA</span></th>
+                    <td>#55</td>
+                </tr>
+                <tr>
+                    <th><img class="crypto-img-table" src="assets/ape.png">Meta Apes <span class="crypto-symbol-table">MAPE</span></th>
+                    <td>#43</td>
+                </tr>
+                <tr>
+                    <th><img class="crypto-img-table" src="assets/9637.png">Altura <span class="crypto-symbol-table">ALU</span></th>
+                    <td>#12</td>
+                </tr>
+                <tr>
+                    <th><img class="crypto-img-table" src="assets/616ea96e079e42928e7bbc3d.png">Gods Unchained <span class="crypto-symbol-table">GODS</span></th>
+                    <td>#54</td>
+                </tr>
+            </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+
+document.getElementById('search-coins-nft').addEventListener('click', post);
+
+function post() {
+  var input = document.getElementById("search-coins-nft");
+  var x = input.value;
+  document.getElementById("search-coins-nft").innerHTML += "<br>&lt;me&gt; " + x;
+
+  input.value = '';
+  input.focus();
+}
+
+</script>
+
+</div>
+
+<!------------ Latest metaverse News ------------>
+<div class="container">
+<div class="row news-container mx-auto">
+<h1 class="latest-articles-title">Latest Metaverse <span class="highlight-blue">News</span></h1>
+<p class="description-text">In nulla posuere sollicitudin aliquam ultrices sagittis orci. Turpis egestas integer eget aliquet nibh praesent tristique.</p>
+<hr>
+<div class="col-xxl-12">
+    <article class="featured-article">
+        <div class="row featured-article-container">
+            <div class="col-xxl-6 col-xl-6">
+                <img class="featured-img-article d-block" src="assets/featured-img-news.png">
+            </div>
+            <div class="col-xxl-6 col-xl-6">
+                <h2 class="featured-article-title">Illuvium NFT Game</h2>
+                <ul class="article-tags featured-article-tags">
+                    <li>#featured</li>
+                    <li>#metaverse</li>
+                    <li>#news</li>
+                </ul>
+                <p class="featured-article-text">
+                    Pellentesque nec nam aliquam sem. Tristique nulla aliquet enim tortor at. Vitae auctor eu augue ut lectus arcu. Nisi scelerisque eu ultrices vitae auctor eu augue ut lectus.
+                </p>
+                <button type="button" class="read-more-btn btn d-block">Read More</button>
+            </div>
+        </div>
+    </article>
+</div>
+<div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6 col-sm-6">
+    <article>
+        <img class="img-article d-block" src="assets/blok-news1.png">
+        <h2 class="article-title">Bloktopia announcement</h2>
+        <ul class="article-tags">
+            <li>#metaverse</li>
+            <li>#news</li>
+        </ul>
+        <p class="article-text">Nec tincidunt praesent semper.</p>
+    </article>
+</div>
+<!-------------------------------------------------------->
+<div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6 col-sm-6">
+    <article>
+        <img class="img-article d-block" src="assets/nft-img-news1.png">
+        <h2 class="article-title">Mutant Apes yatch</h2>
+        <ul class="article-tags">
+            <li>#nft</li>
+            <li>#ethereum</li>
+        </ul>
+        <p class="article-text">Tristique senectus et netus.</p>
+    </article>
+</div>
+<!-------------------------------------------------------->
+<div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6 col-sm-6">
+    <article>
+        <img class="img-article d-block" src="assets/sandbox.png">
+        <h2 class="article-title">Sandbox new Gameplay</h2>
+        <ul class="article-tags">
+            <li>#guide</li>
+            <li>#community</li>
+        </ul>
+        <p class="article-text">Metus dictum at tempor commodo.</p>
+    </article>
+</div>
+<!-------------------------------------------------------->
+<div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6 col-sm-6">
+    <article>
+        <img class="img-article d-block" src="assets/meta-guide.png">
+        <h2 class="article-title">Find Metaverse Gems</h2>
+        <ul class="article-tags">
+            <li>#metaverse</li>
+            <li>#news</li>
+        </ul>
+        <p class="article-text">Arcu non odio euismod lacinia.</p>
+    </article>
+</div>
+<!-------------------------------------------------------->
+</div>
+<!------------------------------- Trending Coins ------------------------------->
+<div class="trending-coin-wrapper row mx-auto">
+<h1 class="trending-title">Todays <span class="highlight-purple">Trending</span> Metaverse coins</h1>
+<p class="description-text">Integer vitae justo eget magna. Urna nec tincidunt praesent semper feugiat pellentesque diam volutpat.</p>
+<hr>
+<div class="col-xxl-2 col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6">
+    <div class="trending-coin-container">
+        <a href="coin-page.html"><img class="trending-coin-img d-block mx-auto" src="assets/11206.png"></a>
+        <h5 class="trending-coin-name text-center"><a href="coin-page.html" class="trending-coin-link">Bloktopia <span class="pos-change">+9.36%</span></a></h5>
+        <div class="trending-coin-price text-center">$0.003242</div>
+        <img class="tr-chart d-block mx-auto" src="assets/gr1.svg">
+    </div>
+</div>
+<!-------------------------------------------------------->
+<div class="col-xxl-2 col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6">
+    <div class="trending-coin-container">
+        <a href="coin-page.html"><img class="trending-coin-img d-block mx-auto" src="assets/2856.png"></a>
+        <h5 class="trending-coin-name text-center"><a href="coin-page.html" class="trending-coin-link">Ceek VR <span class="pos-change">+2.27%</span></a></h5>
+        <div class="trending-coin-price text-center">$0.338</div>
+        <img class="tr-chart d-block mx-auto" src="assets/gr2.svg">
+    </div>
+</div>
+<!-------------------------------------------------------->
+<div class="col-xxl-2 col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6">
+    <div class="trending-coin-container">
+        <a href="coin-page.html"><img class="trending-coin-img d-block mx-auto" src="assets/6783.png"></a>
+        <h5 class="trending-coin-name text-center"><a href="coin-page.html" class="trending-coin-link">Axie Infinity <span class="min-change">-5.09%</span></a></h5>
+        <div class="trending-coin-price text-center">$15.06</div>
+        <img class="tr-chart d-block mx-auto" src="assets/red1.svg">
+    </div>
+</div>
+<!-------------------------------------------------------->
+<div class="col-xxl-2 col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6">
+    <div class="trending-coin-container">
+        <a href="coin-page.html"><img class="trending-coin-img d-block mx-auto" src="assets/10729.png"></a>
+        <h5 class="trending-coin-name text-center"><a href="coin-page.html" class="trending-coin-link">UFO Gaming <span class="pos-change">+32.6%</span></a></h5>
+        <div class="trending-coin-price text-center">$0.000001161</div>
+        <img class="tr-chart d-block mx-auto" src="assets/gr3.svg">
+    </div>
+</div>
+<!-------------------------------------------------------->
+<div class="col-xxl-2 col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6">
+    <div class="trending-coin-container">
+        <a href="coin-page.html"><img class="trending-coin-img d-block mx-auto" src="assets/3816.png"></a>
+        <h5 class="trending-coin-name text-center"><a href="coin-page.html" class="trending-coin-link">Verasity <span class="min-change">-14.8%</span></a></h5>
+        <div class="trending-coin-price text-center">$0.004748</div>
+        <img class="tr-chart d-block mx-auto" src="assets/red2.svg">
+    </div>
+</div>
+<!-------------------------------------------------------->
+<div class="col-xxl-2 col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6">
+    <div class="trending-coin-container">
+        <a href="coin-page.html"><img class="trending-coin-img d-block mx-auto" src="assets/9637.png"></a>
+        <h5 class="trending-coin-name text-center"><a href="coin-page.html" class="trending-coin-link">Altura <span class="min-change">-7.1%</span></a></h5>
+        <div class="trending-coin-price text-center">$0.004748</div>
+        <img class="tr-chart d-block mx-auto" src="assets/red2.svg">
+    </div>
+</div>
+<!-------------------------------------------------------->
+</div>
+</div>
+
+<!---------- Top Metaverse Crypto Coins ---------->
+<div class="container mt-3">
+  <div class="metaverse-stats row mx-auto">
+  <div class="col-xxl-5 col-xl-5 col-lg-12">
+  <h1 class="top-coins-title">Top <span class="highlight-purple">Metaverse</span> <span class="highlight-blue">Tokens</span></h1>
+  <p class="description-text">Listed below are the top crypto coins and tokens used for Metaverse. They are listed in size by market capitalization.</p>
+  </div>
+  <div class="col-xxl-7 col-xl-7">
+    <div class="row">
+            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+        <div class="meta-stats-container">
+            <div class="row">
+                <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7 col-sm-7 col-7">
+                    <div class="meta-stat-title">Metaverse Market Cap</div>
+                    <div class="meta-stat-value">$11,234,987,005</div>
+                    <div class="meta-stat-change"><span class="pos-change">+ 2.56%</span></div>
+                </div>
+                <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5 col-sm-5 col-5">
+                    <img class="meta-stats-change-img d-block" src="assets/gr3.svg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+        <div class="meta-stats-container">
+            <div class="row">
+                <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7 col-sm-7 col-7">
+                    <div class="meta-stat-title">Trading Volume 24h</div>
+                    <div class="meta-stat-value">$59,719,562.88</div>
+                    <div class="meta-stat-change"><span class="min-change">- 0.69%</span></div>
+                </div>
+                <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5 col-sm-5 col-5">
+                    <img class="meta-stats-change-img d-block" src="assets/red2.svg">
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+  </div>
+</div>
+  <div class="table-responsive">
+  
+  <table class="table top-coins-table">
+    <thead>
+      <tr class="header-table">
+        <th>Rank</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Market Cap</th>
+        <th>Supply</th>
+        <th>Volume(24h)</th>
+        <th>Change(1d)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td><a class="coin-link" href="coin-page.html"><img class="crypto-img-table" src="assets/6210.png">The Sandbox <span class="crypto-symbol-table">SAND</span></a></td>
+        <td>$1.26</td>
+        <td>$1,570,813,203</td>
+        <td>1,258,626,081</td>
+        <td>$525,481,744</td>
+        <td><span class="pos-change">1.85%</span></td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td><a class="coin-link" href="coin-page.html"><img class="crypto-img-table" src="assets/1966.png">Decentraland <span class="crypto-symbol-table">MANA</span></a></td>
+        <td>$0.900988</td>
+        <td>$1,362,806,003</td>
+        <td>1,849,216,541</td>
+        <td>$252,449,032</td>
+        <td><span class="min-change">1.6%</span></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td><a class="coin-link" href="coin-page.html"><img class="crypto-img-table" src="assets/6783.png">Axie Infinity <span class="crypto-symbol-table">AXS</span></a></td>
+        <td>$14.47</td>
+        <td>$1,221,912,799</td>
+        <td>82,475,674</td>
+        <td>$168,220,710</td>
+        <td><span class="min-change">1.1%</span></td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td><a class="coin-link" href="coin-page.html"><img class="crypto-img-table" src="assets/2130.png">Enjin Coin <span class="crypto-symbol-table">ENJ</span></a></td>
+        <td>$0.535493</td>
+        <td>$478,091,539</td>
+        <td>895,399,956</td>
+        <td>$77,003,559</td>
+        <td><span class="pos-change">0.6%</span></td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td><a class="coin-link" href="coin-page.html"><img class="crypto-img-table" src="assets/5690.png">Render <span class="crypto-symbol-table">RNDR</span></a></td>
+        <td>$0.5097</td>
+        <td>$129,696,905</td>
+        <td>253,798,860</td>
+        <td>$8,352,815</td>
+        <td><span class="min-change">2.73%</span></td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td><a class="coin-link" href="coin-page.html"><img class="crypto-img-table" src="assets/4847.png">Stacks <span class="crypto-symbol-table">STX</span></a></td>
+        <td>$0.3933</td>
+        <td>$520,120,429</td>
+        <td>1,321,722,397</td>
+        <td>$1,584,240</td>
+        <td><span class="pos-change">9.32%</span></td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td><a class="coin-link" href="coin-page.html"><img class="crypto-img-table" src="assets/2856.png">Ceek VR <span class="crypto-symbol-table">CEEK</span></a></td>
+        <td>$0.3203</td>
+        <td>$257,307,955</td>
+        <td>803,717,779</td>
+        <td>$1,658,111</td>
+        <td><span class="min-change">2.88%</span></td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td><a class="coin-link" href="coin-page.html"><img class="crypto-img-table" src="assets/9119.png">Alien Worlds <span class="crypto-symbol-table">TLM</span></a></td>
+        <td>$0.02512</td>
+        <td>$1,570,813,203</td>
+        <td>1,258,626,081</td>
+        <td>$525,481,744</td>
+        <td><span class="pos-change">1.85%</span></td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td><a class="coin-link" href="coin-page.html"><img class="crypto-img-table" src="assets/8719.png">Illuvium <span class="crypto-symbol-table">ILV</span></a></td>
+        <td>$116.45</td>
+        <td>$1,362,806,003</td>
+        <td>1,849,216,541</td>
+        <td>$252,449,032</td>
+        <td><span class="min-change">1.6%</span></td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td><a class="coin-link" href="coin-page.html"><img class="crypto-img-table" src="assets/7654.png">Red Fox <span class="crypto-symbol-table">RFOX</span></a></td>
+        <td>$0.01018</td>
+        <td>$1,221,912,799</td>
+        <td>82,475,674</td>
+        <td>$168,220,710</td>
+        <td><span class="pos-change">1.1%</span></td>
+      </tr>
+      <tr>
+        <td>11</td>
+        <td><a class="coin-link" href="coin-page.html"><img class="crypto-img-table" src="assets/10729.png">UFO Gaming <span class="crypto-symbol-table">UFO</span></a></td>
+        <td>$0.00000117</td>
+        <td>$478,091,539</td>
+        <td>895,399,956</td>
+        <td>$77,003,559</td>
+        <td><span class="min-change">0.6%</span></td>
+      </tr>
+      <tr>
+        <td>12</td>
+        <td><a class="coin-link" href="coin-page.html"><img class="crypto-img-table" src="assets/11206.png">Bloktopia <span class="crypto-symbol-table">BLOK</span></a></td>
+        <td>$0.00346</td>
+        <td>$129,696,905</td>
+        <td>253,798,860</td>
+        <td>$8,352,815</td>
+        <td><span class="pos-change">2.73%</span></td>
+      </tr>
+      <tr>
+        <td>13</td>
+        <td><a class="coin-link" href="coin-page.html"><img class="crypto-img-table" src="assets/17145.png">League of Kingdoms Arena <span class="crypto-symbol-table">LOKA</span></a></td>
+        <td>$0.5467</td>
+        <td>$520,120,429</td>
+        <td>1,321,722,397</td>
+        <td>$1,584,240</td>
+        <td><span class="min-change">4.89%</span></td>
+      </tr>
+      <tr>
+        <td>14</td>
+        <td><a class="coin-link" href="coin-page.html"><img class="crypto-img-table" src="assets/11212.png">Star Atlas <span class="crypto-symbol-table">STAR</span></a></td>
+        <td>$0.006767</td>
+        <td>$257,307,955</td>
+        <td>803,717,779</td>
+        <td>$1,658,111</td>
+        <td><span class="pos-change">2.88%</span></td>
+      </tr>
+      <tr>
+        <td>15</td>
+        <td><a class="coin-link" href="coin-page.html"><img class="crypto-img-table" src="assets/9637.png">Altura <span class="crypto-symbol-table">ALU</span></a></td>
+        <td>$0.4391</td>
+        <td>$1,570,813,203</td>
+        <td>1,258,626,081</td>
+        <td>$525,481,744</td>
+        <td><span class="min-change">1.85%</span></td>
+      </tr>
+      <tr>
+        <td>16</td>
+        <td><a class="coin-link" href="coin-page.html"><img class="crypto-img-table" src="assets/10631.png">Gods Unchained <span class="crypto-symbol-table">GODS</span></a></td>
+        <td>$116.45</td>
+        <td>$1,362,806,003</td>
+        <td>1,849,216,541</td>
+        <td>$252,449,032</td>
+        <td><span class="pos-change">1.62%</span></td>
+      </tr>
+      <tr>
+        <td>17</td>
+        <td><a class="coin-link" href="coin-page.html"><img class="crypto-img-table" src="assets/11437.png">Deepspace <span class="crypto-symbol-table">DPS</span></a></td>
+        <td>$0.09621</td>
+        <td>$1,221,912,799</td>
+        <td>82,475,674</td>
+        <td>$168,220,710</td>
+        <td>9.68%</td>
+      </tr>
+      <tr>
+        <td>18</td>
+        <td><a class="coin-link" href="coin-page.html"><img class="crypto-img-table" src="assets/10046.png">Dotmoovs <span class="crypto-symbol-table">MOOV</span></a></td>
+        <td>$0.009301</td>
+        <td>$478,091,539</td>
+        <td>895,399,956</td>
+        <td>$77,003,559</td>
+        <td>0.6%</td>
+      </tr>
+      <tr>
+        <td>19</td>
+        <td><a class="coin-link" href="coin-page.html"><img class="crypto-img-table" src="assets/8163.png">Exeedme <span class="crypto-symbol-table">XED</span></a></td>
+        <td>$0.05718</td>
+        <td>$129,696,905</td>
+        <td>253,798,860</td>
+        <td>$8,352,815</td>
+        <td>2.73%</td>
+      </tr>
+      <tr>
+        <td>20</td>
+        <td><a class="coin-link" href="coin-page.html"><img class="crypto-img-table" src="assets/7590.png">Division Network <span class="crypto-symbol-table">DVI</span></a></td>
+        <td>$0.0796</td>
+        <td>$520,120,429</td>
+        <td>1,321,722,397</td>
+        <td>$1,584,240</td>
+        <td>3.31%</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+  <button type="button" class="load-more-btn btn d-block mx-auto">Load More</button>
+</div>
+
+<div class="sub-container container-fluid">
+
+<div class="container">
+<div class="row">
+    <div class="col-xxl-8 col-xl-8 col-lg-6 col-md-12 col-sm-12 col-12 align-self-center">
+       <h2 class="sub-title">Always stay on top of the latest metaverse News</h2>
+       <p class="sub-text">Pellentesque elit eget gravida cum sociis natoque penatibus et magnis. Dolor magna eget est lorem ipsum dolor. Commodo nulla facilisi nullam vehicula ipsum a arcu cursus.</p>
+       <button type="button" class="subscribe-btn btn d-block">Subscribe now</button>
+    </div>
+    <div class="col-xxl-4 col-xl-4 col-lg-6 col-md-12 col-sm-12 col-12 align-self-center"><img class="sub-img d-block" src="assets/subscribe.png"></div>
+</div>
+</div>
+
+</div>
+
+<!----------------------- *Footer* ----------------------->
+<footer class="container-fluid">
+<div class="container">
+  <div class="row d-flex">
+    <div class="col-xxl-6 col-xl-3 col-lg-12 col-md-12">
+      <img class="brand-footer d-block" src="assets/logo.png">
+      <p class="footer-description">Nunc id cursus metus aliquam eleifend mi. Quam quisque id diam vel quam elementum. Pretium viverra suspendisse potenti nullam ac tortor. Eget aliquet nibh</p>
+    </div>
+    <!-------------------------------------------->
+    <div class="col-xxl-2 col-xl-3 col-lg-4 col-md-4">
+      <div class="menu-footer-title">Useful Links</div>
+      <ul class="menu-footer-list">
+        <li><a href="#">Metaverse Coins</a></li>
+        <li><a href="#">Gainers/Losers</a></li>
+        <li><a href="#">NFT Market</a></li>
+        <li><a href="#">Our API</a></li>
+      </ul>
+    </div>
+    <!-------------------------------------------->
+    <div class="col-xxl-2 col-xl-3 col-lg-4 col-md-4">
+      <div class="menu-footer-title">Community</div>
+      <ul class="menu-footer-list">
+        <li><a class="d-inline-flex" href="#"><i class="ri-twitter-line"></i>Twitter</a></li>
+        <li><a class="d-inline-flex" href="#"><i class="ri-telegram-line"></i>Telegram</a></li>
+        <li><a class="d-inline-flex" href="#"><i class="ri-discord-line"></i>Discord</a></li>
+        <li><a class="d-inline-flex" href="#"><i class="ri-reddit-line"></i>Reddit</a></li>
+        <li><a class="d-inline-flex" href="#"><i class="ri-facebook-line"></i>Facebook</a></li>
+        <li><a class="d-inline-flex" href="#"><i class="ri-youtube-line"></i>Youtube</a></li>
+        <li><a class="d-inline-flex" href="#"><i class="ri-instagram-line"></i>Instagram</a></li>
+      </ul>
+    </div>
+    <!-------------------------------------------->
+    <div class="col-xxl-2 col-xl-3 col-lg-4 col-md-4">
+      <div class="menu-footer-title">metacoinmarket.io</div>
+      <ul class="menu-footer-list">
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Careers <span class="badge bg-primary">Join us</span></a></li>
+        <li><a href="#">Branding</a></li>
+        <li><a href="#">Advertising</a></li>
+      </ul>
+    </div>
+  </div>    
+</div>
+</footer>
+
+
+</body>
+</html>
